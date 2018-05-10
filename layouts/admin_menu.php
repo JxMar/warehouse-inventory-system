@@ -27,14 +27,14 @@
       <span>Products</span>
     </a>
     <ul class="nav submenu">
-       <li><a href="product.php">Manage products</a> </li>
-       <li><a href="add_product.php">Add product</a> </li>
+       <li><a href="product.php">Manage Products</a> </li>
+       <li><a href="add_product.php">Add Product</a> </li>
    </ul>
   </li>
   <li>
     <a href="media.php" >
       <i class="glyphicon glyphicon-picture"></i>
-      <span>Meadias</span>
+      <span>Medias</span>
     </a>
   </li>
   <li>
@@ -44,7 +44,7 @@
       </a>
       <ul class="nav submenu">
          <li><a href="sales.php">Manage Sales</a> </li>
-         <li><a href="add_sale.php">Add Sale</a> </li>
+         <li><a href="add_sale.php">Add Sales</a> </li>
      </ul>
   </li>
   <li>
@@ -53,9 +53,9 @@
        <span>Sales Report</span>
       </a>
       <ul class="nav submenu">
-        <li><a href="sales_report.php">Sales by dates </a></li>
-        <li><a href="monthly_sales.php">Monthly sales</a></li>
-        <li><a href="daily_sales.php">Daily sales</a> </li>
+        <li><a href="sales_report.php">Sales by Dates </a></li>
+        <li><a href="monthly_sales.php">Monthly Sales</a></li>
+        <li><a href="daily_sales.php">Daily Sales</a> </li>
       </ul>
   </li>
 </ul>
