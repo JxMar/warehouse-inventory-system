@@ -28,7 +28,7 @@ $results = '';
 <html lang="en-US">
  <head>
    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-   <title>Default Page Title</title>
+   <title>Sales Report</title>
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"/>
    <style>
    @media print {
@@ -76,12 +76,15 @@ $results = '';
    </style>
 </head>
 <body>
+  <?php include_once('layouts/header.php'); ?>
   <?php if($results): ?>
+  <script src="libs/js/print.js"></script>
     <div class="page-break">
-       <div class="sale-head pull-right">
+		<div id="printableArea">
+			<div class="sale-head pull-right">
            <h1>Sales Report</h1>
            <strong><?php if(isset($start_date)){ echo $start_date;}?> To <?php if(isset($end_date)){echo $end_date;}?> </strong>
-       </div>
+			</div>
       <table class="table table-border">
         <thead>
           <tr>
@@ -121,8 +124,11 @@ $results = '';
            <td> $<?php echo number_format(total_price($results)[1], 2);?></td>
          </tr>
         </tfoot>
-      </table>
-    </div>
+		</table>
+		</div>
+			<button titlt="print screen" alt="print screen" onClick="printDiv('printableArea')" target="_blank" style="cursor:pointer;"  class="btn btn-info  pull-right" data-toggle="tooltip" title="Print">
+			<span class="glyphicon glyphicon-print"></span>
+	</div>
   <?php
     else:
         $session->msg("d", "Sorry no sales has been found. ");
