@@ -78,7 +78,7 @@ $results = '';
 <body>
   <?php include_once('layouts/header.php'); ?>
   <?php if($results): ?>
-  <script src="libs/js/print.js"></script>
+  <script src="libs/js/sales_report_print.js"></script>
     <div class="page-break">
 		<div id="printableArea">
 			<div class="sale-head pull-right">
